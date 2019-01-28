@@ -152,7 +152,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1vw;
+  padding: 0 2vw;
 }
 
 nav li {
@@ -165,7 +165,7 @@ nav a {
 	color: #444;
 	display: block;
 	font: normal 13px/50px Arial, Helvetica, sans-serif;
-	padding: 0 25px;
+	padding: 0 25px 0 0;
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition: all .25s ease;
@@ -173,6 +173,9 @@ nav a {
 	-ms-transition: all .25s ease;
 	-o-transition: all .25s ease;
 	transition: all .25s ease;
+}
+nav ul li:last-of-type a {
+  padding: 0;
 }
 
 nav li:hover a {
@@ -233,7 +236,6 @@ li {
   width: 150px;
   height: auto;
   float: left;
-  margin: 15px 0 0 2%;
 }
 
 nav {
@@ -266,7 +268,6 @@ li {
   width: 150px;
   height: auto;
   float: left;
-  margin: 15px 0 0 2%;
 }
 
 .menu {
@@ -1393,7 +1394,6 @@ margin-top: 5vw;
     width: auto;
     height: 5vh;
     float: right;
-    margin: 2vh 4vw 0 0;
   }
   .nav-main {
     display: none;
@@ -1701,7 +1701,6 @@ margin-top: 5vw;
     width: auto;
     height: 5vh;
     float: right;
-    margin: 2vh 4vw 0 0;
   }
   .nav-main {
     display: none;
