@@ -165,7 +165,7 @@ nav a {
 	color: #444;
 	display: block;
 	font: normal 13px/50px Arial, Helvetica, sans-serif;
-	padding: 0 25px 0 0;
+	padding: 0 12.5px 0;
 	text-align: center;
 	text-decoration: none;
 	-webkit-transition: all .25s ease;
@@ -174,11 +174,8 @@ nav a {
 	-o-transition: all .25s ease;
 	transition: all .25s ease;
 }
-nav ul li:last-of-type a {
-  padding: 0;
-}
 
-nav li:hover a {
+nav li:hover a, .nav--link-active {
 	background: #405E54;
 	color:#FFF;
 }
