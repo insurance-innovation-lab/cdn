@@ -152,6 +152,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1vw;
 }
 
 nav li {
@@ -287,7 +288,7 @@ li {
 }
 
 .heroImage {
-  background-image: url("presentation.jpg");
+  background-image: url("../img/presentation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -306,7 +307,7 @@ li {
 }
 .heroImage--button-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .heroImage--button-wrap a {
@@ -322,9 +323,8 @@ li {
 }
 @media screen and (min-width: 1025px) {
   .heroImage {
+    width: calc(100% - 16vw);
     padding: 8vh 8vw;
-  }
-  .heroImage_headlineWrapper {
   }
   .heroImage_textWrapper {
     margin: 3vh 0 7vh;
@@ -477,6 +477,10 @@ h5 {
   width: 30%;
   border: none;
   background-color: #FF47DE;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
 }
 /* news styling */
 .diagonal {
