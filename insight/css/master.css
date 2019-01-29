@@ -43,6 +43,12 @@ h2 {
   line-height: 50px;
   font-weight: lighter;
 }
+h3 {
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: 700;
+}
 h4 {
   font-size: 21px;
   line-height: 30px;
@@ -59,13 +65,25 @@ p, .insightsItem--titleArea-heading {
   line-height: 30px;
   font-weight: 300;
 }
-
+.form--button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .form--button {
   font-size: 21px;
   line-height: 30px;
   text-transform: uppercase;
   color: white;
+  margin: 4vh 0 0 !important;
+  text-decoration: none;
+  text-align: center;
 }
+.form--button-wrapper .form--button {
+  width: 48%;
+}
+
 
 
 input {
@@ -294,14 +312,21 @@ li {
   justify-content: center;
   width: 100%;
 }
+.heroImage_headlineWrapper {
+  margin: 0 0 3vh;
+}
+.heroImage_headlineWrapper h3 {
+  color: #fff;
+  text-shadow: 5px 2px 9px rgba(0,0,0,0.7);
+  padding: 0;
+}
 .heroImage--insights-page {
-  text-align: center;
   margin: 0 0 4vh !important;
 }
 .heroImage_headlineWrapper > p, .heroImage_textWrapper > p {
   color: #fff;
   margin: 0;
-  text-shadow: 5px 2px 9px rgba(0,0,0,0.7);
+
 }
 .heroImage--button-wrap {
   display: flex;
@@ -311,7 +336,12 @@ li {
 .heroImage--button-wrap a {
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center
+  text-align: center;
+  width: 100%;
+  margin: 2vh 0;
+}
+.heroImage--button-wrap a:last-of-type {
+  margin: 0 0 2vh;
 }
 .heroImage--button-wrap .outline {
   color: #ff47de;
@@ -960,7 +990,7 @@ margin-top: 5vw;
   flex-grow: 1;
   justify-content: center;
 }
-.startSurvey--button-wrapper button {
+.startSurvey--button-wrapper a {
   width: auto;
 }
 
@@ -1194,6 +1224,11 @@ margin-top: 5vw;
     font-size: 28px;
     line-height: 40px;
   }
+  h3 {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0;
+  }
   p, .insightsItem--titleArea-heading {
     font-size: 18px;
     line-height: 27px;
@@ -1279,6 +1314,12 @@ margin-top: 5vw;
   .form--button {
     font-size: 18px;
     line-height: 27px;
+  }
+  .form--button-wrapper .form--button {
+    width: 100%;
+  }
+  .form--button-wrapper .form--button:last-of-type {
+    margin: 2vh 0 0 !important;
   }
   .heroImage--button-wrap a {
     width: 100%;
