@@ -690,7 +690,20 @@ margin-top: 5vw;
 .btn-spacing {
   margin: 4vh 0 0 !important;
 }
-
+.back-button--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.back-button--wrapper a {
+  border: 1px solid #FF47DE;
+  background: #fff;
+  color: #FF47DE;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto;
+  padding: 10px 6vw;
+}
 /* dashboard styling */
 
 .dashboard {
@@ -1001,7 +1014,7 @@ margin-top: 5vw;
   }
   .insightsItem--wrapper {
     padding: 1vh 2vw;
-    margin: 2vh 0;
+    margin: 2vh 0 4vh;
   }
   .insightsItem--titleArea, .insightsItem--dateArea {
     margin: 0 8vw 0 0;
@@ -1036,7 +1049,7 @@ margin-top: 5vw;
   }
   .insightsItem--wrapper {
     padding: 1vh 2vw;
-    margin: 2vh 0;
+    margin: 2vh 0 4vh;
   }
   .insightsItem--titleArea, .insightsItem--dateArea {
     margin: 0 8vw 0 0;
@@ -1068,7 +1081,7 @@ margin-top: 5vw;
   }
   .insightsItem--wrapper {
     padding: 1vh 2vw;
-    margin: 2vh 0;
+    margin: 2vh 0 4vh;
   }
   .insightsItem--titleArea, .insightsItem--dateArea {
     margin: 0 8vw 0 0;
@@ -1099,7 +1112,7 @@ margin-top: 5vw;
   }
   .insightsItem--wrapper {
     padding: 1vh 2vw;
-    margin: 2vh 0;
+    margin: 2vh 0 4vh;
     flex-wrap: wrap;
   }
   .insightsItem--titleArea {
