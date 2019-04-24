@@ -1020,9 +1020,6 @@ margin-top: 5vw;
   letter-spacing: 0;
   font-weight: bold;
 }
-.insightsItem--titleArea-subHeading {
-  word-break: break-all;
-}
 .insightsItem--downloadArea {
   border-left: 2px solid #ff47de;
   flex-grow: 1;
@@ -1110,38 +1107,8 @@ margin-top: 5vw;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 767px) {
-  .insights-wrapper {
-    width: 80%;
-    margin: 4vh auto;
-  }
-  .insightsItem--wrapper {
-    padding: 1vh 2vw;
-    margin: 2vh 0 4vh;
-  }
-  .insightsItem--titleArea, .insightsItem--dateArea {
-    margin: 0 8vw 0 0;
-  }
-  .insightsItem--titleArea {
-    width: 50%;
-  }
-  .insightsItem--titleArea-heading {
-    margin: 0 0 1vh !important;
-  }
-  .insightsItem--dateArea > p:first-of-type {
-    margin: 0 0 1vh !important;
-  }
-  .insightsItem--downloadArea > a > img {
-    width: 30px;
-  }
-  .survey-list .insightsItem--titleArea, .survey-list .insightsItem--dateArea {
-    margin: 0;
-  }
-  .startSurvey--button-wrapper {
-    padding: 0 6vw;
-  }
-}
-@media screen and (max-width: 599px) {
+
+@media screen and (max-width: 767px) {
   .insights-wrapper {
     width: 80%;
     margin: 4vh auto;
@@ -1150,6 +1117,9 @@ margin-top: 5vw;
     padding: 1vh 2vw;
     margin: 2vh 0 4vh;
     flex-wrap: wrap;
+  }
+  .insightsItem--wrapper p {
+    margin: 0 0 20px;
   }
   .insightsItem--titleArea {
     margin: 0 8vw 0 0;
@@ -1923,4 +1893,56 @@ margin-top: 5vw;
 }
 .insights-news-wrapper p {
   color: #fff;
+}
+
+.about h3 {
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  margin: 50px 0 0;
+}
+.about p {
+  width: 100%;
+  text-align: center;
+}
+.about-panel-text-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0 50px;
+}
+.about-panel-text {
+  width: 45%;
+}
+.about-panel-text h3 {
+  font-weight: lighter;
+  margin: 0;
+}
+.about-panel-text h3 span {
+  border-bottom: 2px solid #FF47DE;
+}
+@media only screen and (max-width: 767px) {
+  .about-panel-text-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-panel-text {
+    width: 100%;
+  }
+  .about-panel-text:first-of-type {
+    margin: 0 0 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about h3 {
+    margin: 30px 0 0;
+  }
+  .about-panel-text-wrapper {
+    margin: 30px 0 40px;
+  }
+  .about-panel-text:first-of-type {
+    margin: 0 0 30px;
+  }
+  .about-panel-text h3 {
+    margin: 0;
+  }
 }
