@@ -937,13 +937,16 @@ margin-top: 5vw;
 
 .subheader-wrap {
   border-bottom: solid #ccc 1px;
-  height: 50px;
   width: 90%;
-  margin: 2vh auto;
+  margin: 50px auto 0;
   display: flex;
   justify-content: center;
 }
-
+@media screen and (max-width: 1024px) {
+  .subheader-wrap {
+    margin: 30px auto 0;
+  }
+}
 .subheader-titel {
   float: left;
   margin: 17.5px 1.5%;
@@ -1750,9 +1753,6 @@ margin-top: 5vw;
   .form--button {
     font-size: 1.5vh;
   }
-  h3 {
-    font-size: 2vh;
-  }
   /* header mq */
   .logo {
     width: auto;
@@ -1946,4 +1946,86 @@ margin-top: 5vw;
   .about-panel-text h3 {
     margin: 0;
   }
+}
+
+/* STYLING NEWS SECTION - INDEX PAGE + NEWS ARCHIVE PAGE*/
+.news-wrapper {
+  width: 60%;
+  margin: 100px auto 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.news-wrapper h2 {
+  text-align: center;
+}
+.news-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.news-item h3 {
+  font-weight: lighter;
+  text-align: left;
+  padding-bottom: 0;
+}
+.news-item h3::before {
+  content: "+++";
+  color: #FF47DE;
+  padding: 0 10px 0 0;
+}
+.news-item h3 span {
+  border-bottom: 2px solid #FF47DE;
+}
+.news-item p {
+  text-align: left;
+  padding: 0;
+  margin-top: 0;
+}
+.news-item a {
+  display: block;
+  margin: 20px 0 40px;
+  align-self: center;
+}
+.news-item-date {
+  margin: 15px 0 5px !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* STYLING OF THE INACTIVE SURVEYS */
+.inactive-survey-explanation {
+  text-align: center;
+  padding: 0 10vw;
+  margin: 20px 0 50px;
+}
+@media screen and (min-width: 1025px) {
+  .inactive-survey-explanation {
+    width: 80%;
+  }
+}
+.inactive {
+  margin: 0 auto;
+}
+.inactive:last-of-type {
+  margin: 0 auto 50px;
+}
+.inactive .insightsItem--wrapper {
+  border: 0;
+  display: block;
+  margin: 0 0 20px !important;
+  padding: 0 2vw !important;
+}
+
+.inactive .insightsItem--wrapper .insightsItem--titleArea{
+  width: 100%;
+}
+.inactive .insightsItem--wrapper .insightsItem--dateArea{
+  width: 100%;
+  display: flex;
+}
+.inactive .insightsItem--wrapper .insightsItem--dateArea p:first-of-type {
+  margin: 0 10px 0 0 !important;
 }
