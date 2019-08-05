@@ -690,6 +690,12 @@ margin-top: 5vw;
   text-decoration: none;
 }
 
+.flyer-link {
+  color: #FF47DE;
+  padding: 10px 0 20px 0;
+  text-decoration: none;
+}
+
 .password {
   float: left;
 }
